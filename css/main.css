@@ -1,27 +1,488 @@
-/* CSS STRUCTURE TEMPLATE */
-.selector {
-    /* POSITIONING */
-    position: absolute, relative, fixed, etc;
-    z-index: 10;
-    top: 0;
-    right: 0;
-    /* DISPLAY & BOX MODEL */
-    display: block, flex, etc;
-    overflow: visible, hidden, scroll, etc;
-    box-sizing: border-box, etc;
-    width: - - -;
-    height: - - - ;
-    padding: 10px 10px;
-    border: 0 solid color;
-    margin: - - - ;
-    /* COLOR */
-    background: - - - ;
-    color: - - - ;
-    /* TEXT */
-    font-family: - - - ;
-    font-size: - - - ;
-    line-height: - - - ;
-    text-align: - - - ;
-    /* OTHER */
-    cursor: - - - ;
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.BG_image {
+  height: 100vh;
+  display: block;
+  margin: auto;
+  justify-content: center;
+
+}
+
+header{
+  background-image: url('/assets/bkg_1\ 1.svg');
+  background-size: cover;
+  height: 960px;
+  position: relative;
+}
+
+
+.mission_Text {
+   color: white;
+   position: absolute;
+   padding-top: 15em; 
+   padding-left: 3em; 
+   display: block;
+   margin: auto;
+   top: 50%;
+   left:50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+   width: 600px;
+   height: 60px;
+   font-family:'Roboto', sans-serif;
+   font-weight: 800;
+
+}
+
+.header_Text h1{
+  font-size: 60px;
+}
+
+.header_Text h2{
+  font-size: 20px;
+}
+
+.nav_bar{
+  background-color: rgba(0, 0, 0, 1);
+  display: flex;
+  justify-content:space-around;
+  margin-top: 20px;
+
+  
+  
+}
+
+.bg_opacity{
+  opacity: .69;
+}
+
+.nav_bar > .menu{
+  background-color: rgba(0, 0, 0, 0.792);
+  display: flex; 
+  justify-content:space-around;
+  text-align: center;
+  text-transform: capitalize;
+  float: left;
+  padding: 12px;
+  color: darkorange;
+  text-decoration: none;
+  font-size: 16px;
+  width: 40%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+
+
+}
+
+.menu li>a{
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 1.2;
+  text-align: center;
+}
+
+
+
+.menu :hover{
+  color: darkorange;
+
+}
+ul {
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  margin: 3;
+  padding: 3;
+}
+
+
+
+.main{
+background-size:cover;
+padding: 15 em;
+display: block;
+height: 4000px;
+overflow: visible;
+width: 1440px;
+position: absolute;
+background-color:  rgba(0, 0, 0, 0.792);
+
+}
+
+body{
+  background-color: #ffffff;
+  font-family:'Roboto', sans-serif;
+}
+
+.container1{
+  background-color: rgba(56, 56, 56, 1);
+  text-align: center;
+  color: #ffffff;
+
+  
+
+}
+
+  
+.cardholder {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#pg2{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column-reverse;
+
+}
+.pg_text{
+  text-align: left;
+  width: 586px; 
+}
+
+.l_button{
+  display: flex;
+}
+
+#pg3{
+  background-color: #ff7630;
+}
+.pg3_text {
+  display:block; 
+  justify-content: center;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Begin media styling */
+
+.pg3_text h2{
+  padding-top: 5rem;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.pg3_text h3{
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.slide{
+  background-color: #ff7630;
+  font-size: 14px;
+  font-weight: 400;
+  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card_wrapper{
+ padding-left: 45vh;
+}
+
+
+
+.cardholder2{
+  color:black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.cardholder2 h4{
+  text-align: center;
+
+}
+.card_content {
+  background-color: #ffffff;
+  width: 255px;
+  height: 103;
+  align-content: center;
+  justify-content: center;
+
+}
+
+.DL-BTN{
+  text-align: center;
+  margin: 8rem;
+}
+
+.small_text_contact{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.large_text_contact{
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  color: #ff7630;
+}
+
+
+
+.icon_sep{
+  text-align: center;
+}
+
+form{
+  margin:auto;
+  text-align: center;
+  background-color: white;
+  padding: 100px;
+}
+.form-container {
+  display: block;
+  
+}
+form h1 {
+  color: #FF7630;
+  font-size: 25px;
+}
+form h2 {
+  color:#FF7630;
+  font-size: 45px;
+}
+.form-text {
+ margin-right:35%;
+}
+.form-text-input {
+  border-radius: 0;
+  border: 1px solid black;
+}
+.form-separator {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: black;
+}
+
+
+
+.footer-address {
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 3%;
+  
+}
+.footer-country-US {
+  text-align: left;
+}
+.footer-country-CA {
+  text-align: right;
+}
+.footer-country-US h1{
+  font-size: 15px;
+  font-weight: 700;
+  color: #FF7630;
+  padding-bottom: 20px;
+}
+.footer-country-US h2{
+  font-size: 22px;
+  font-weight: 400;
+}
+.footer-country-US h3{
+  font-size: 22px;
+  font-weight: 700;
+}
+.footer-country-CA h1{
+  font-size: 15px;
+  font-weight: 700;
+  color: #FF7630;
+  padding-bottom: 20px;
+}
+.footer-country-CA h2{
+  font-size: 22px;
+  font-weight: 400;
+}
+.footer-country-CA h3{
+  font-size: 22px;
+  font-weight: 700;
+}
+.footer-copyright {
+  padding-top: 1%;
+  text-align:center;
+  color: black;
+  letter-spacing: 3px;
+  background-color: white;
+  padding-bottom: 20px;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.center{
+  text-align: center;
+}
+
+
+
+@media only screen and (max-width: 380px){
+ 
+  header{
+      background-image: url('/assets/bkg_1\ 1.svg');
+      background-size: flex;
+      height: 960px;
+      position: relative;
+  }
+  
+  
+  .mission_Text {
+       color: white;
+       position: absolute;
+       padding-top: 53em; 
+       padding-left: 0; 
+       display: block;
+       margin: auto;
+       top: 50%;
+       left:50%;
+       transform: translate(-50%,-50%);
+       text-align: center;
+       width: 1000px;
+       height: 60px;
+       font-family:'Roboto', sans-serif;
+       font-weight: 800;
+  
+  
+  
+  }
+  
+  .mission_Text h1{
+      font-size: 20px;
+  }
+  
+  .mission_Text h2{
+      font-size: 30px;
+  }
+
+
+  .cardholder {
+      display: flex; 
+      justify-content: center;
+      align-items: center; 
+      /* flex-direction: column; */
+      flex-wrap: wrap;
+      
+
+  }
+  
+  .container1 {
+      height: 1050px;
+      /* background-color: rgba(56, 56, 56, 1); */
+      padding-top: 5em; 
+  }
+  
+  #pg2{
+      padding-left: 3%;
+      display: flex;
+      /* justify-content: space-evenly; */
+      flex-direction: column-reverse;
+      position:center;
+  }
+  .text_wrapper{
+      text-align: left;
+      width: 586px; 
+      color: black;
+  }
+
+  .l_button{
+      justify-content: center;
+      align-items: center; 
+      /* flex-direction: column; */
+      flex-wrap: wrap;
+
+  }
+
+  .l_button img {
+      padding-top: 8%;
+      padding-bottom: 8%;
+      width: 340px;
+      
+  }
+  
+  .top_text {
+      font-size: 20px;
+      font-weight: 700;
+      /* font-family: 'Roboto'; */
+      font-style: 'normal';
+      text-transform: uppercase;
+      padding-left: 0px;
+      padding-right: 0;
+  }
+
+  .lower_text {
+      font-weight: 900;
+      font-size: 30px;
+      text-transform: uppercase;
+      padding-top: 10px;
+
+  }
+  
+
+  .pg2_text {
+      padding: 0px 18px;
+  }
+
+  .pg2_text p {
+      margin-top: 15px;
+      padding-bottom: 57px;
+  }
+
+  .pg3_text {
+      display:block; 
+      justify-content: center;
+      text-align: center;
+      margin-top: 1rem;
+      padding-bottom: 94px;
+  }
+  
+  .pg3_text h2{
+      padding-top: 5rem;
+      color: #ffffff;
+      font-size: 16px;
+  }
+  
+  .pg3_text h3{
+      color: #ffffff;
+      font-size: 24px;
+      text-transform: uppercase;
+      padding-top: 15px;
+      padding-bottom: 25px;
+  }
+
+  .cardholder2{
+      color:rgb(244, 243, 244);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 45px;
+  }
+
+  .cardholder2 img{
+      /* margin: auto;
+      padding-left: 45px; */
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      
+  }
+  
+  .cardholder2 h4{
+    text-align: center;
+  }
+
+  .card_wrapper{
+    padding-left: 45px;
+   }
+   
+   
+   
+   
+
+  
+
+ 
+  
 }
