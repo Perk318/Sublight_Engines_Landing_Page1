@@ -51,8 +51,6 @@ header{
   justify-content:space-around;
   margin-top: 20px;
 
-  
-  
 }
 
 .bg_opacity{
@@ -210,13 +208,13 @@ body{
   margin: 8rem;
 }
 
-.small_text_contact{
+.pg4_small{
   text-align: center;
   font-size: 25px;
   font-weight: 700;
 }
 
-.large_text_contact{
+.pg4_big{
   text-align: center;
   font-size: 35px;
   font-weight: 700;
@@ -260,6 +258,10 @@ form h2 {
   background-color: black;
 }
 
+#bottom {
+  background-color: rgba(41, 41, 41, 1);
+
+}
 
 
 .footer-address {
@@ -319,8 +321,106 @@ form h2 {
 
 
 
-@media only screen and (max-width: 380px){
+@media only screen and (max-width: 390px){
  
+  .nav_bar{
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+
+  .nav_bar #links {
+    display: none;
+  }
+
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .nav_bar img {
+    width: 100px;
+    height: 40px;
+  }
+
+  .bg_opacity{
+    opacity: .69;
+  }
+
+  /* .nav_bar  .menu{
+    background-color: rgba(0, 0, 0, 0.792);
+    display: flex; 
+    justify-content:space-around;
+    text-align: center;
+    text-transform: capitalize;
+    float: left;
+    padding: 12px;
+    color: darkorange;
+    text-decoration: none;
+    font-size: 16px;
+    width: 40%;  Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. 
+    text-align: center;  If you want the text to be centered 
+    flex-direction: column;
+    position:absolute;
+    width: 100%;
+    top: 40px;
+
+  } */
+
+  .logo {
+    display: flex;
+    justify-content: left;
+  }
+  
+  .menu li>a{
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 1.2;
+    text-align: center;
+  }
+  
+  
+  
+  .menu :hover{
+    color: darkorange;
+  
+  }
+  ul {
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    margin: 3;
+    padding: 3;
+  }
+
+
+  
+  
+  
+  .main{
+  background-size:cover;
+  padding: 15 em;
+  display: block;
+  height: 4000px;
+  overflow: visible;
+  width: 1440px;
+  position: absolute;
+  background-color:  rgba(0, 0, 0, 0.792);
+  
+  }
+  
+  
+  
+  
+  
   header{
       background-image: url('/assets/bkg_1\ 1.svg');
       background-size: flex;
@@ -430,12 +530,18 @@ form h2 {
       padding-bottom: 57px;
   }
 
+  #pg3{
+    align-items: center;
+
+
+  }
+  
   .pg3_text {
       display:block; 
       justify-content: center;
       text-align: center;
       margin-top: 1rem;
-      padding-bottom: 94px;
+      
   }
   
   .pg3_text h2{
@@ -452,15 +558,25 @@ form h2 {
       padding-bottom: 25px;
   }
 
+  .pg3_text img {
+    padding-bottom: 43.5px;
+  }
+
   .cardholder2{
-      color:rgb(244, 243, 244);
+      color:rgba(9, 9, 9, 0.866);
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
-      padding-left: 45px;
+      /* justify-content: center; */
+      /* padding-left: 45px; */
+      padding-bottom: 91px;
   }
 
   .cardholder2 img{
+      align-items: center;
+      display: flex;
+      justify-content: center;
+
       /* margin: auto;
       padding-left: 45px; */
       display: block;
@@ -476,10 +592,187 @@ form h2 {
   .card_wrapper{
     padding-left: 45px;
    }
+  
+  .slide{
+    margin-bottom: 32px;
+    background-color:  #FF7630;
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+
+
+  .card_content h4{
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-bottom: 6.06px;
+  }
+
+  .card_content p{
+    font-size: 20px;
+    text-align: center;
+  }
+
    
+
+  .icon_sep{
+    text-align: center;
+  }
+
+  .DL-BTN{
+  display: none;
+  }
+
+  .pg4_small{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 44px;
+    margin-bottom: 14px;
+    
+  }
+  
+  .pg4_big{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    color: #ff7630;
+    margin-bottom: 25px;
+  }
+  
+  form{
+    padding: 0%;
+  }
+  
+  .form-container {
+    display: block;
+    width: 80%;
+    height: 300px;
+    margin: 0% auto;
+    padding: 0%;
+    /* border: 1px solid black; */
+    text-align: center;
+  }
+
+  .form-container input{
+    padding: 10px 100px;
+  }
+  
+  .form-container select{
+    padding: 10px 123px;
+  }
+  
+  .form-text{
+    text-align: center;
+    margin: 0%;
    
+  } 
+  
+  .form-text input{
+    margin: 30px;
+  }
+  
+  #bottom{
+    justify-content: center;
+    
+  }
+
+
+  .bottom{
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+    
+  }
+
+  .bottom h1 {
+    color: rgba(255, 118, 48, 1);
+    font-size: 45px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 39.36px;
    
+  }
+
+  .bottom img{
+    margin: 0% auto;    
+  }
+  
+  
+  
+  .footer-img{
+    background-color: black;
+  }
+
+  .footer-address {
+    display: flex;
+    flex-direction: column; 
+  }
+  .footer-country-US {
+    text-align: center;
+  }
+  .footer-country-CA {
+    text-align: center;
+  }
+
+  .footer-country-US h1{
+    font-size: 15px;
+    font-weight: 700;
+    color: #FF7630;
+    padding-top: 63px;
+    
+  }
+  .footer-country-US h2{
+    font-size: 22px;
+    font-weight: 400;
+    padding-top: 7px;
+  }
+  .footer-country-US h3{
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 45px;
+  }
+  .footer-country-CA h1{
+    font-size: 15px;
+    font-weight: 700;
+    color: #FF7630;
+    
+  }
+  .footer-country-CA h2{
+    font-size: 22px;
+    font-weight: 400;
+    padding-top: 7px;
+  }
+  .footer-country-CA h3{
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .footer-copyright {
+    padding-top: 95px;
+    text-align:center;
+    color: black;
+    letter-spacing: 3px;
+    background-color: white;
    
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .icon {
+    /* background: black; */
+    display: block;
+    /* position: absolute; */
+    padding-top: 20px;
+    padding-right: 8px;
+    color: white;
+    line-height: 24px;
+    justify-content: right;
+    right: 80px;
+    margin: auto;
+    
+}
+
+.nav_bar a:hover {
+  background-color: #ddd;
+  color: black;
+}
 
   
 
